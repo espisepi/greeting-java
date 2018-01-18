@@ -4,9 +4,10 @@ jdk:
 - oraclejdk8
 notifications:
   email:
-  - sepinaco@gmail.com
-  on_success: never
-  on_failure: never
+    recipients:
+      - sepinaco@gmail.com
+    on_success: never
+    on_failure: never
 deploy:
   provider: heroku
   api_key:
