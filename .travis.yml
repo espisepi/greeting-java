@@ -7,3 +7,10 @@ notifications:
   - sepinaco@gmail.com
   on_success: never
   on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: LEc3TtGPH5rPzzJoFu1pkQpkrRwnxc5jg3Y6hDyYQ9BeaumH05530DK+yO1plaVnhJU+Dq/H+IuiWKiM9MaJwqvXqjZqxxeyE1J/sXgyr7Nyt1tbWtLn6+TWXtMOAZvZDseqPv5WSbJJAil5dJvxPvnIhslcA/ZOXHsYanudwsJTlMA/VUuCsWd/S1ffpfRPXT3HYdPtESn3qGP+UDQPmcIvp0p3ThaF6XZN6i8b4l/caZfGmzhsw4qBUSUOn+9q9oQXlSjdBkTHnXqZqofPStZZNuYtSFVD01TpLgWkxsxCbNfW1l+jABr+UC9kAZAmjtfMrJwdlnMWr+uFk43Dtr0UIRVFP0vW5UFlin0lHtSMrpHsOvoLprtWMK7yla1G5gazdQ81BTIbBWjfTTs719Y4cPmxyJeRQTkoe2tp7ppdzSByJJSC0uLzTpyVE26SaCxqqy0saqByUX8yB/G2c8ByXGwIFomGPgdQS+68pq/cWNbsHjAFgT9HgPRS38TH6xyRYyZWVJhU7P9/RJWvcoK17xVzXxwiimVyAit/pMZVcpOduoyQKu/LM3by98RfymJs/xdWAdm8Y0mQ/7RAcQdDIxk8fKYUV6SKssiBE0PaDEwmFguW2Cxg9nCPz9LZGIzPH8xaauXlxhGHX0Z1p7HTK7mxM7l67mL5CzHdYmg=
+  app: greeting-java
+  on:
+    repo: espisepi/greeting-java
